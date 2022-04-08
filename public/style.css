@@ -1,0 +1,422 @@
+html,body {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+  
+  }
+  body {
+      background: #DCCCA9; 
+      font-family: 'Abel', sans-serif;
+      margin: 0; 
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  p {
+      margin: 0 0 0 0; 
+      padding: 2% 0 2% 0; 
+      font-size: 1rem; 
+  }
+  
+  h1 {
+      font-family: 'Rosario', sans-serif;
+      color: #6B1919;
+      font-size:1.4rem; 
+      margin: 0.4rem 0 0 0.4rem;
+  }
+  
+  h2{
+      font-family: 'Rosario', sans-serif;
+      font-size: 3.4em; 
+      margin: auto; 
+  }
+  
+  h3{
+      font-size: 2.5rem; 
+      margin: 3rem 0 0 0;
+  
+  }
+  
+  h4{
+      margin: auto; 
+      text-align: center;
+  }
+  
+  h5 {
+      margin: auto; 
+      font-size: 2.8rem; 
+  }
+  
+  h6 {
+  
+      font-size: 2rem; 
+  }
+  
+  li {
+   font-size: 1rem; 
+  }
+  
+  i{
+      font-size:1rem; 
+  }
+  
+  a {
+      color: white; 
+      text-decoration: none; 
+  }
+  
+  a:hover{
+      text-decoration: none; 
+  }
+  
+  nav {
+      height: 2.4em;  
+      margin: auto auto auto 1%; 
+  }
+  
+  
+  .menu {
+      color: #6B1919;
+      font-size: 2.2rem;
+  }
+  
+  .menu:hover {
+      color: #b35656; 
+  }
+  
+  
+  .navbar-toggle{
+      border: solid 1px #6B1919;
+      width: 20%; 
+  }
+  
+  .navbar {
+      color: #6B1919;
+  }
+  
+  .nav-link {
+      color: #6B1919;
+      font-size: 1.4rem; 
+  }
+  
+  .nav-link:hover {
+      color: #b35656; 
+  }
+  
+  .nav-link:click{
+      color: #3b1010;
+  }
+  
+  .social-media {
+      margin: auto; 
+  }
+  
+  
+  .icons{
+      color: #6B1919;
+      font-size: 1.6rem; 
+      margin: auto; 
+  }
+  
+  .icons:hover {
+      color: #b35656; 
+  }
+  
+  
+  .logo-img {
+      width: 3rem; 
+      margin: auto;
+  }
+  
+  
+  
+  #landing-photo{
+      background-image: url(assets/landing-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position:center;
+    margin: 0; 
+    padding: 1rem 0 1rem 0;
+    height: 80vh;   
+    padding: 2rem 0 2rem 0;
+    height: 70vh;   
+  
+  
+  }
+  
+  .landing-container{
+      background-image: linear-gradient(to bottom right, #6B1919, #491111);
+      padding: 0.5rem 0 1rem 0;
+      margin: auto auto auto auto; 
+      border-radius: 4px; 
+    
+  
+  }
+  
+  #landing-info{
+      color: white; 
+     
+  }
+  
+  #landing-info h4{
+     font-size: 1.5rem;
+     margin: auto; 
+     padding: 0 0 2rem 0;
+  }
+  
+  
+  #logo-landing {
+      width: 200px;
+      margin: auto;  
+  }
+  /* style image as instagram post */
+  
+  
+  
+  .images {
+      padding: 0 0 1% 0; 
+      margin: 0; 
+     
+  }
+  
+  .image {
+      object-fit: cover;
+      width:11rem;
+      height:11rem;
+      border-radius: 16px; 
+      padding: 1%;
+      opacity: 1;
+      
+  }
+  
+  .image:hover {
+      opacity: 0.8;
+    
+    
+  }
+  
+  .instagram-btn{
+      margin-right: 1%; 
+  }
+  
+  .image-hide {
+      display: none; 
+  
+  }
+  
+  .btn{
+      background:#7E9799; 
+      color: white; 
+      height: 3.4rem; 
+      margin: 1rem auto 1rem auto; 
+      border-style: none; 
+      font-size: 1.5rem; 
+      border-radius: 1rem; 
+      
+  
+  
+  }
+  
+  .btn:hover{
+      background: #98c3c5;
+  
+  }
+  
+  
+  
+  .form-container{
+      background-image: linear-gradient(to bottom right, #6B1919, #491111);; 
+      color: white;
+    
+  }
+  
+  form h3{
+      font-size: 2rem;
+      padding: 1rem 0 0 0;
+      text-decoration: underline #7E9799;
+  
+  }
+  
+  
+  .boknings-info{
+      margin: auto ; 
+  }
+  
+  
+  .boknings-info h3{
+      font-size: 2rem;
+      padding: 1rem 0 0 0;
+      text-decoration: underline #7E9799;
+  
+  }
+  
+  
+  
+  input, textarea{
+      border-radius:8px; 
+      border-style: none;  
+      background-color: #F5F0E5;
+      margin: 0.3rem 0 0.3rem 0;
+      padding: 0.5rem; 
+  }
+  
+  .upload{
+      background:#7E9799; 
+      color: white; 
+      width: 14rem;
+  }
+  
+  .form-img{
+     display: none; 
+  }
+  
+  .tanka-pa-container {
+      background-color: #F5F0E5; 
+  }
+  
+  
+  #hitta-hit h3{
+      font-size: 2rem;
+      padding: 3rem 0 0 0;
+      margin: 0;
+      text-decoration: underline #7E9799;
+    
+  }
+  
+  .mapouter {
+      width: 100%;
+  }
+  
+  .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      width: 100%;
+  }
+  
+  .om-page {
+      color:  #6B1919;
+      padding: 2rem
+  }
+
+  .om-page-text h3{
+    margin:0.8rem 0 0 0; 
+  }
+
+  .skotsel-container {
+    color: black;
+    margin: 7% 0 0 0 ;
+ 
+  }
+
+  .tank-pa {
+      background:#7E9799; 
+      color: white; 
+      margin: 0 1% 0 0; 
+      padding:2%; 
+     
+  }
+
+  .skotsel-rad  {
+    margin: 0 1% 0 0; 
+    background: #E5E5E5; 
+    padding:2%; 
+
+  }
+
+  .skotsel-container h3 {
+      margin: 2% 0 0 0; 
+  }
+
+  
+  iframe {
+      width: 100%; 
+      height: 70vh; 
+      margin: 0; 
+  }
+  
+  footer {
+      background-color: #7E9799;
+      padding: 1rem 0 1rem 0;
+      font-size: 1.4rem; 
+      margin-top: auto;
+  }
+  
+  
+  @media only screen and (min-width: 680px) {
+      .image {
+          object-fit: cover;
+          width:16rem;
+          height:16rem;
+         
+         
+  
+    }
+  
+  
+   .form-img{
+      background-image: url(assets/JAGJOBBAR1.jpg); 
+      height: 90vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+      margin: auto auto auto auto;
+      display: flex; 
+   }
+  
+   .boknings-info{
+      margin: 0 0 0 3rem; 
+  }
+  
+  #adress-container {
+      margin: 0 0 0 2rem; 
+  }
+  
+  .mapouter {
+      /*  text-align: right; */
+      margin:auto; 
+      width: 100%;
+       
+   }
+    
+  }
+  
+  @media only screen and (min-width: 860px) {
+      .image {
+          width:11rem;
+          height:11rem;
+    }
+
+
+
+   #hitta-hit{
+      margin: 0 0 0 2rem; 
+  }
+  
+  }
+  
+  @media only screen and (min-width:1020px) {
+  
+      .image {
+          width:16rem;
+          height:16rem;
+    }
+  }
+  
+  
+  @media only screen and (min-width:1220px) {
+      .image {
+          width:19rem;
+          height:19rem;
+      
+    }
+    
+  }
+  
+  
+  @media only screen and (min-width:1520px) {
+      .image {
+          width:22rem;
+          height:22rem;
+      
+    }
+  }
