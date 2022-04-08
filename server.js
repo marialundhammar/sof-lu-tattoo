@@ -27,7 +27,7 @@ app.use(express.json());
 app.use(bodyParser.json());
 app.use(fileupload); */
 
-var path;
+//var path;
 
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/contact-form.html");
@@ -104,12 +104,6 @@ app.post("/", (req, res) => {
     Typ av tatuering: ${req.body.type} \n 
     Storlek av tatueringen: ${req.body.size}\n
     Länk till pintrest eller google drive-länk eller liknande: ${req.body.url}`,
-
-    attachments: [
-      {   // utf-8 string as an attachment
-        filename: 'Bifogad bild',
-        path: 'https://raw.github.com/nodemailer/nodemailer/master/LICENSE'
-      }]
 
 
   };
