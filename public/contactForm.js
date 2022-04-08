@@ -29,7 +29,6 @@ contactForm.addEventListener("submit", (e) => {
   console.log("submit clicked");
 
 
-
   let formData = {
     name: name.value,
     email: email.value,
