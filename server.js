@@ -85,8 +85,8 @@ app.post("/", (req, res) => {
     host: 'smtp.gmail.com',
     port: 587,
     secure: false,
-    /*   port: 465,
-      secure: true, */
+    port: 465,
+    secure: true,
     auth: {
       user: process.env.USER,
       pass: process.env.PASSWORD,
