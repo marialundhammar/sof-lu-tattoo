@@ -83,10 +83,10 @@ app.post("/", (req, res) => {
 
   const transporter = nodeMailer.createTransport({
     host: 'smtp.gmail.com',
-    port: 587,
-    secure: false,
-    /* port: 465,
-    secure: true, */
+    /*     port: 587,
+        secure: false, */
+    port: 465,
+    secure: true,
     auth: {
       user: process.env.USER,
       pass: process.env.PASSWORD,
