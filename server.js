@@ -56,7 +56,7 @@ app.get("/instagram", (req, res) => {
 
 app.get("/images", (req, res) => {
   const TOKEN =
-    "IGQVJXMEZAwT2hYZAFdScHFfNVliRDI5N2JZAYm9qV2N6bk93S3BtM05XRFdZAWTNDQmlzcVM3T1pILXppMFVjeS16UUpCVk1KbTV6VlZATNDBjUXVYX0FtV1pUSzVnZA3ppdzZArQ3ZAIRWpsU0FnQVYxMXZAscAZDZD";
+    "IGQVJWWlF1eWhzV0N5NmlhSnRiTTROelpDTEdjaWlWZAFJ2ZAjVOOTVpVzkxeVVfNzhfTVotd1hTQVU4VlBiWXQ1NWx6V05uUVE1dU5SODdzcHlwam9WWUlUMGUtaDNnRFgzaWtVUTR5dHBiYndiODF0WQZDZD";
   const url = `https://graph.instagram.com/me/media?fields=id,media_type,media_url,permalink&access_token=${TOKEN}`;
   axios.get(url).then((response) => {
     res.send(response.data);
