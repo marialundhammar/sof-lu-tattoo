@@ -4,87 +4,39 @@ const app = express();
 
 const nodeMailer = require("nodemailer");
 const { request } = require("express");
-/* 
-const multer = require("multer");
-const bodyParser = require("body-parser");
-const fileupload = require("express-fileupload");
- */
 
 require('dotenv').config();
 
 /* test
  */
-const port = process.env.PORT;
+let port = process.env.PORT;
 if (port == null || port == "") {
-  port = 5000;
+  port=5000; 
 }
 
 
 //middleware
 app.use(express.static("public"));
 app.use(express.json());
-/* app.use(bodyParser.urlencoded({ extended: true }))
-app.use(bodyParser.json());
-app.use(fileupload); */
-
-//var path;
-
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/contact-form.html");
 });
-/* 
-var storage = multer.diskStorage({
-  destination: function (req, file, callback) {
-    callback(null, 'public/images')
-
-  },
-  filename: function (req, file, callback) {
-    let filename = 'filenametogive';
-    req.body.file = filename;
-    callback(null, filename + "_" + Date.now())
-  } 
-}) 
-
-/* const upload = multer({
-  storage: storage, limits: { fieldSize: 10 * 1024 * 1024 }
-}).single('image')
- */
 
 app.get("/instagram", (req, res) => {
   res.sendFile(__dirname + "/public/instagram.html");
 });
 
 app.get("/images", (req, res) => {
-  const TOKEN =
-    "IGQVJWWlF1eWhzV0N5NmlhSnRiTTROelpDTEdjaWlWZAFJ2ZAjVOOTVpVzkxeVVfNzhfTVotd1hTQVU4VlBiWXQ1NWx6V05uUVE1dU5SODdzcHlwam9WWUlUMGUtaDNnRFgzaWtVUTR5dHBiYndiODF0WQZDZD";
-  const url = `https://graph.instagram.com/me/media?fields=id,media_type,media_url,permalink&access_token=${TOKEN}`;
+  const url = `https://graph.instagram.com/me/media?fields=id,media_type,media_url,permalink&access_token=${process.env.TOKEN}`;
   axios.get(url).then((response) => {
     res.send(response.data);
   });
 });
-
 app.post("/", (req, res) => {
   console.log(req.body);
-  //console.log(req.file);
-
-  /*   upload(req, res, function (err) {
-      if (err) {
-        console.log(err)
-        return res.end("something went wrong")
-      } else {
-   */
-  //console.log(req.file);
-  /*     console.log(req.body.file)
-      path = req.file.path;
-      console.log(path); */
-
-
-
 
   const transporter = nodeMailer.createTransport({
     host: 'smtp.gmail.com',
-    /*     port: 587,
-        secure: false, */
     port: 465,
     secure: true,
     auth: {
@@ -95,7 +47,7 @@ app.post("/", (req, res) => {
 
   const mailOptions = {
     from: req.body.email,
-    to: "marialundhammar@gmail.com",
+    to: "soflutattoo@gmail.com",
     subject: `Bokning från ${req.body.name} med mailadress ${req.body.email} `,
     text:
       `Mejl: ${req.body.email}
